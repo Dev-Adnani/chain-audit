@@ -129,8 +129,8 @@ const analyzeContract = async (
 
     // Return the results for UI display
     return auditResults;
-  } catch (error: any) {
-    console.error("Error calling OpenAI API:", error.message);
+  } catch (error) {
+    console.error("Error calling OpenAI API:", error);
     throw error;
   }
 };
